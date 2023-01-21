@@ -94,7 +94,7 @@ const Header = () => {
                             </div> :
 
                             
-                            <a href="/login"><button class="btn btn-success" type="submit">Login</button></a>
+                            <Link to={'/login'} ><button class="btn btn-success" type="submit">Login</button></Link>
 
                     }
 
