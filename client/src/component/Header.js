@@ -45,10 +45,10 @@ const Header = () => {
         <nav class="navbar navbar-dark bg-dark" style={{ background: 'black', top: "0", zIndex: '1', position: 'fixed', width: "100%" }} >
             <div class="container-fluid " style={{ margin: "0 10% 0 10%", display: "flex", textAlign: 'center', alignItems: "center", height: "50px", width: "100%" }}>
                 <div class="navbar-header" style={{ margin: "0 9px 0 9px", padding: "0 15px 0 15px" }}>
-                    <a style={{textDecoration:'none'}} href="/">
+                    <Link to={'/'}style={{textDecoration:'none'}} >
                         
                         <p style={{fontFamily:"sans-serif",width:'120px',fontSize:'25px',margin:"0px",fontWeight:'500' ,color:"white", background:'black'}}>ShoppingCity</p>
-                    </a>
+                    </Link>
                 </div>
 
                 <div style={{ width: "40%", display: "flex", margin: "9px", padding: "0 15px 0 15px" }}>
@@ -106,7 +106,7 @@ const Header = () => {
 
 
                 <div style={{ display: "flex", margin: "9px", padding: "0 15px 0 15px" }}>
-                    <a href="" class="badge badge-info" style={{ padding: "10px 10px", color: "white", background: 'none' }}> More </a>
+                    <Link to={''} class="badge badge-info" style={{ padding: "10px 10px", color: "white", background: 'none' }}> More </Link>
                 </div>
                 <div style={{ display: "flex", margin: "9px", textAlign: 'center', padding: "0 15px 0 15px" }}>
                     <Link to={"/cart"} style={{ padding: "5px" }}>
