@@ -66,7 +66,7 @@ const Header = () => {
 
                             <ul style={{ background: "white", position: "fixed", color: 'black', marginTop: '40px', marginLeft: '0dpx', width: "35%", padding: "5px" }}>
                                 {
-                                    products.filter(data => data.description.toLowerCase().includes(text.toLowerCase())).map(data => (
+                                    products.filter(data => data.longTitle.toLowerCase().includes(text.toLowerCase())).map(data => (
                                         <li style={{ listStyle: "none", marginTop: '1px' }}>
                                             <Link to={`/product/${data.id}`} onClick={() => setText('')} style={{ textDecoration: 'none', color: 'inherit', fontWeight: "500" }} >
                                                 {data.longTitle}
