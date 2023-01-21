@@ -54,23 +54,25 @@ const Login = () => {
                 
             </div>
             <div>
-                <div style={{ marginTop: "2px"}}>
-                    <label>Email:</label>
-                    <input type="email" onChange={(e)=> onInputchange(e)} className="form-control" name="email" required/>
-                </div>
-                <div style={{ marginTop: "2px"}}>
-                    <label >Password:</label>
-                    <input type="password" onChange={(e)=> onInputchange(e)} className="form-control" name="password" required/>
-                </div >
-                {
-                    loginError &&
-                        <div style={{ marginTop: "10px",padding:"0px 10px"}}>
-                            <p style={{ fontWeight: "500" , color:"red"}}>Please enter valid login detail</p>
-                        </div>
-                }
-                <div style={{ marginTop: "20px"}}>
-                    <button type="submit" onClick={()=> userLoginDetail()} className="btn btn-primary btn-lg btn-block">Login</button>
-                </div>               
+                <form className="row g-3 needs-validation" novalidate >
+                    <div style={{ marginTop: "2px"}}>
+                        <label>Email:</label>
+                        <input type="email" onChange={(e)=> onInputchange(e)} id="validationCustom01" className="form-control" name="email" required ='true' />
+                    </div>
+                    <div style={{ marginTop: "2px"}}>
+                        <label >Password:</label>
+                        <input type="password" onChange={(e)=> onInputchange(e)} id="validationCustom01" className="form-control" name="password" required='true' />
+                    </div >
+                    {
+                        loginError &&
+                            <div style={{ marginTop: "10px",padding:"0px 10px"}}>
+                                <p style={{ fontWeight: "500" , color:"red"}}>Please enter valid login detail</p>
+                            </div>
+                    }
+                    <div style={{ marginTop: "20px"}}>
+                        <button type="submit" onClick={()=> userLoginDetail()} className="btn btn-primary btn-lg btn-block">Login</button>
+                    </div>
+                </form>               
                 
             </div>            
 
