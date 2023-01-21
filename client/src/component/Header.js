@@ -88,7 +88,7 @@ const Header = () => {
                         account ? <div className="dropdown">
                                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{account}</button>
                                 <div style={{ marginTop: "0px", background: '', minWidth: "90px", marginLeft: "0px", padding: "3px", width: "4%", textAlign: 'center'}} class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" style={{ color: "black", textDecoration: "none" }} href="" onClick={() => logOut()}>Logout</a>
+                                    <Link to={'/'} class="dropdown-item" style={{ color: "black", textDecoration: "none" }}  onClick={() => logOut()}>Logout</Link>
 
                                 </div>
                             </div> :
