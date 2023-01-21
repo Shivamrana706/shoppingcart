@@ -1,5 +1,5 @@
 import { useState,useContext } from "react"
-import { useNavigate } from "react-router-dom";
+import { useNavigate,Link } from "react-router-dom";
 import { userLogin } from "../services/api";
 
 import { DataContext } from "../context/DataProvider";
@@ -49,7 +49,7 @@ const Login = () => {
                     <p style={{ fontFamily:'fantasy',fontWeight:'50px' ,fontSize:"25px", marginBottom:"0px"}}>Welcome</p>
                 </div>
                 <div style={{width:"30%" ,textAlign:'center', padding:"2px" ,marginTop:"2px"}}>
-                    <a href="/register" ><button style={{ marginLeft: "auto", width: "100%" }} className="btn btn-warning">Register</button></a>
+                    <Link to={"/register"}><button style={{ marginLeft: "auto", width: "100%" }} className="btn btn-warning">Register</button></Link>
                 </div>               
                 
             </div>

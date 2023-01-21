@@ -47,7 +47,7 @@ const Header = () => {
                 <div class="navbar-header" style={{ margin: "0 9px 0 9px", padding: "0 15px 0 15px" }}>
                     <a style={{textDecoration:'none'}} href="/">
                         
-                        <p style={{fontFamily:"sans-serif",width:'120px',fontSize:'25px',margin:"0px",fontWeight:'500' ,color:"white", background:'black'}}>ShopingCity</p>
+                        <p style={{fontFamily:"sans-serif",width:'120px',fontSize:'25px',margin:"0px",fontWeight:'500' ,color:"white", background:'black'}}>ShoppingCity</p>
                     </a>
                 </div>
 
@@ -109,10 +109,10 @@ const Header = () => {
                     <a href="" class="badge badge-info" style={{ padding: "10px 10px", color: "white", background: 'none' }}> More </a>
                 </div>
                 <div style={{ display: "flex", margin: "9px", textAlign: 'center', padding: "0 15px 0 15px" }}>
-                    <a href="/cart" style={{ padding: "5px" }}>
+                    <Link to={"/cart"} style={{ padding: "5px" }}>
                         <span class="glyphicon glyphicon-shopping-cart" style={{ color: "white", padding: "0 0 0 0" }}></span>
                         <span class="badge" style={{ color: "white", background: "none", padding: "0 0 0 0" }}>{myCartLenght}</span>
-                    </a>
+                    </Link>
                 </div>
 
             </div>
