@@ -31,23 +31,23 @@ const Register =() =>{
             <div className="resister" style={{padding:"10px"}}>
                 <div style={{ marginTop: "2px"}}>
                     <label >Name</label>
-                    <input type="text" onChange={(e)=>onInputChange(e)} className="form-control" name="name" />
+                    <input type="text" onChange={(e)=>onInputChange(e)} className="form-control" name="name" required/>
                 </div>   
                 <div style={{ marginTop: "2px"}}>
                     <label >Username:</label>
-                    <input type="text" onChange={(e)=>onInputChange(e)} className="form-control" name="username" />
+                    <input type="text" onChange={(e)=>onInputChange(e)} className="form-control" name="username" required/>
                 </div>             
                 <div style={{ marginTop: "2px"}}>
                     <label>Email:</label>
-                    <input type="email" onChange={(e)=>onInputChange(e)} className="form-control" name="email" />
+                    <input type="email" onChange={(e)=>onInputChange(e)} className="form-control" name="email" required/>
                 </div>
                 <div style={{ marginTop: "2px"}}>
                     <label >Password:</label>
-                    <input type="password" onChange={(e)=>onInputChange(e)} className="form-control" name="password" />
+                    <input type="password" onChange={(e)=>onInputChange(e)} className="form-control" name="password" required/>
                 </div>
                 <div style={{ marginTop: "2px"}}>
                     <label>Phone:</label>
-                    <input type="phone" onChange={(e)=>onInputChange(e)} className="form-control" name="phone" />
+                    <input type="phone" onChange={(e)=>onInputChange(e)} className="form-control" name="phone" required/>
                 </div>
                 <div style={{ marginTop: "20px"}}>
                     <button type="submit" onClick={()=>regiserUserDetail()} className="btn btn-primary btn-lg btn-block">Register</button>
