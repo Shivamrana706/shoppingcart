@@ -23,14 +23,13 @@ const Header = () => {
     const getAllProducts = async () => {
         const { data } = await getProducts();
         setProducts(data);
-        console.log("allProducts.data", data[0]);
-        console.log("Products", products);
+        
 
     }
     const getText = (etext) => {
         setText(etext);
 
-        console.log("text", text)
+        
     }
     const logOut = () => {
         setAccount('')

@@ -57,11 +57,11 @@ const Login = () => {
                 
                     <div style={{ marginTop: "2px"}}>
                         <label>Email:</label>
-                        <input type="email" onChange={(e)=> onInputchange(e)} id="validationCustom01" className="form-control" name="email" required ='true' />
+                        <input type="email" onChange={(e)=> onInputchange(e)}  className="form-control" name="email" required ='true' />
                     </div>
                     <div style={{ marginTop: "2px"}}>
                         <label >Password:</label>
-                        <input type="password" onChange={(e)=> onInputchange(e)} id="validationCustom01" className="form-control" name="password" required='true' />
+                        <input type="password" onChange={(e)=> onInputchange(e)}  className="form-control" name="password" required='true' />
                     </div >
                     {
                         loginError &&

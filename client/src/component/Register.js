@@ -51,7 +51,7 @@ const Register =() =>{
                 
                     <div style={{ marginTop: "2px"}}>
                         <label >Name</label>
-                        <input type="text" onChange={(e)=>onInputChange(e)}  className="form-control is-invalid" name="name" required='true' />
+                        <input type="text" onChange={(e)=>onInputChange(e)}  className="form-control" name="name" required='true' />
                     </div>   
                     <div style={{ marginTop: "2px"}}>
                         <label >Username:</label>
