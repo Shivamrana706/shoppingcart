@@ -29,17 +29,17 @@ const Register =() =>{
     }
 
     const checkLogin = () =>{
-        console.log("register.name",register.name)
+        
         if (register.name ==  "" ){
-            setValidateDetail("Enter the Name.");
+            setValidateDetail("Please enter the Name");
         }else if(register.username ==  "" ){
-            setValidateDetail("Enter the Username");
+            setValidateDetail("Please enter the Username");
         }else if(register.email ==  "" ){
-            setValidateDetail("Enter the Email.");
+            setValidateDetail("Please enter the Email");
         }else if(register.password ==  "" ){
-            setValidateDetail("Enter the Password.");
+            setValidateDetail("Please enter the Password");
         }else if(register.phone ==  "" ){
-            setValidateDetail("Enter the Phone number.")
+            setValidateDetail("Please enter the Phone number")
         }else {
             navigate('/login');
         }

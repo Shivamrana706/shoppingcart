@@ -54,7 +54,7 @@ const Login = () => {
                 
             </div>
             <div>
-                <form className="row g-3 needs-validation" novalidate >
+                
                     <div style={{ marginTop: "2px"}}>
                         <label>Email:</label>
                         <input type="email" onChange={(e)=> onInputchange(e)} id="validationCustom01" className="form-control" name="email" required ='true' />
@@ -72,7 +72,7 @@ const Login = () => {
                     <div style={{ marginTop: "20px"}}>
                         <button type="submit" onClick={()=> userLoginDetail()} className="btn btn-primary btn-lg btn-block">Login</button>
                     </div>
-                </form>               
+                              
                 
             </div>            
 
